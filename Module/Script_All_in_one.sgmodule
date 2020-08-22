@@ -12,12 +12,9 @@ URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 # > 知乎 去广告
-
-//SOME MCN INFO MAY BE USEFUL
+DOMAIN,du.163.com,REJECT
 URL-REGEX,https://www.zhihu.com/api/v4/mcn/,REJECT
 DOMAIN,appcloud2.zhihu.com,REJECT
-
-//DO NOT GET CDN-BASED IP
 DOMAIN,118.89.204.198,REJECT
 
 USER-AGENT,AVOS*,REJECT
