@@ -348,8 +348,6 @@ nhaccuatui.js = requires-body=1,max-size=0,debug=1,script-path=https://raw.githu
 Unfold.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Unfold.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$
 # > videoshow
 videoshow.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/videoshow.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/owa\.videoshowiosglobalserver\.com\/zone\/.+\/iosPayClient\/(payVerify|imeiVerify)
-# > Buyhack
-verify_receipt.js = requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,script-update-interval=0,type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$
 # > zingmp3
 zingmp3.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingmp3.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.global\.mp3\.zing\.vn\/.+\/getUserInfo\?data=
 zingmp3.downloadsong.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingmp3.downloadsong.js,script-update-interval=0,type=http-response,pattern=^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getDownloadSongInfo\?data
