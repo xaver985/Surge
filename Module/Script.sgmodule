@@ -216,7 +216,7 @@ hnsyhb.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent
 zgtyzb.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/zgtyzb.js,type=http-response,pattern=http:\/\/rest\.zhibo\.tv\/room\/get\-room\-info\-v430
 # > sunshy
 # > Fantastical 内购解锁 (By @sunshy)
-fantastical.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$
+fantastical.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details)
 # > SoloLearn Unlock PRO & Platinum Moderator (By @sunshy)
 sololearn.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/sololearn.js,type=http-response,pattern=https:\/\/api\.sololearn\.com\/(authenticateDevice|challenge\/GetContestFeed|Profile\/GetProfile)$
 # > CheeryTodo
