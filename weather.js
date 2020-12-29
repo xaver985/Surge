@@ -7,6 +7,7 @@ const aqicnToken = '6493e1050293f72276a74f04e38254ce66be15c4'
 /*
 	[Script]
 	AQI-US = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?, requires-body=true, script-path=/path/to/iOS_Weather_AQI_Standard.js
+
 	[MITM]
 	hostname = weather-data.apple.com
 */
@@ -78,12 +79,12 @@ function constructAirQuailityNode(aqicnData) {
 	airQualityNode.airQualityCategoryIndex = classifyAirQualityLevel(aqicnIndex)
 	airQualityNode.airQualityScale = AirQualityStandard.US
 	airQualityNode.airQualityIndex = aqicnIndex
-	airQualityNode.pollutants.CO.amount = aqicnData.iaqi.co.v
-	airQualityNode.pollutants.SO2.amount = aqicnData.iaqi.so2.v
-	airQualityNode.pollutants.NO2.amount = aqicnData.iaqi.no2.v
-	airQualityNode.pollutants["PM2.5"].amount = aqicnData.iaqi.pm25.v
-	airQualityNode.pollutants.OZONE.amount = aqicnData.iaqi.o3.v
-	airQualityNode.pollutants.PM10.amount = aqicnData.iaqi.pm10.v
+	airQualityNode.pollutants.CO.amount = aqicnData.iaqi.co?.v || -1
+	airQualityNode.pollutants.SO2.amount = aqicnData.iaqi.so2?.v || -1
+	airQualityNode.pollutants.NO2.amount = aqicnData.iaqi.no2?.v || -1
+	airQualityNode.pollutants["PM2.5"].amount = aqicnData.iaqi.pm25?.v || -1
+	airQualityNode.pollutants.OZONE.amount = aqicnData.iaqi.o3?.v || -1
+	airQualityNode.pollutants.PM10.amount = aqicnData.iaqi.pm10?.v || -1
 	airQualityNode.metadata.latitude = aqicnData.city.geo[0]
 	airQualityNode.metadata.longitude = aqicnData.city.geo[1]
 	airQualityNode.metadata.read_time = roundHours(new Date(), 'down')
