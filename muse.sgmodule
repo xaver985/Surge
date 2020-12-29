@@ -1,0 +1,8 @@
+#!name=Script - All in one
+#!desc=脚本合集
+#!system=ios
+[Script]
+musedash.js = type=http-response,pattern=^https://prpr-muse-dash\.peropero\.net/musedash/v2/weekly/,requires-body=1,max-size=0,script-path=https://ruleset.tanmy.dev/musedash.js,script-update-interval=3600
+
+[MITM]
+hostname = prpr-muse-dash.peropero.net
